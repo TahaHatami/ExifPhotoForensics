@@ -16,7 +16,7 @@ ExifPhotoForensics یک ابزار قدرتمند و سبک برای مشاهد�
 
 برای آشنایی کامل با نحوه استفاده از ابزار، ویدئوی آموزشی زیر را مشاهده کنید:
 
-[![پیش‌نمایش ویدیو](assets/PlayVideo.png)](assets/Video.mp4)
+[![پیش‌نمایش ویدیو](assets/PlayVideo.png)]([assets/Video.mp4](https://raw.githubusercontent.com/TahaHatami/ExifPhotoForensics/refs/heads/main/assets/Video.mp4))
 
 
 ---
