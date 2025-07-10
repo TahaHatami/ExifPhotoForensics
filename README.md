@@ -12,9 +12,10 @@ ExifPhotoForensics یک ابزار قدرتمند و سبک برای مشاهد�
 
 ---
 
-## 🎬 پیش‌نمایش ویدئویی
+## 🎬دانلود پیش‌نمایش ویدئویی
 
 برای آشنایی کامل با نحوه استفاده از ابزار، ویدئوی آموزشی زیر را مشاهده کنید:
+روی تصویر کلیک سپس دانلود شده و مشاهده کنید💕
 
 [![پیش‌نمایش ویدیو](https://raw.githubusercontent.com/TahaHatami/ExifPhotoForensics/main/assets/PlayVideo.png)](https://raw.githubusercontent.com/TahaHatami/ExifPhotoForensics/main/assets/Video.mp4)
 
