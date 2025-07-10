@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <title>فارنزیک عکس</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/CSS/style.css" />
+</head>
+<body>
+    <script src="../static/JS/script.js"></script>
+    <h1>ExifTool Terminal UI</h1>
+
+    <form method="post" enctype="multipart/form-data" id="upload-form">
+        <input type="file" name="image" accept="image/*" class="file-upload-input" id="file-upload" required />
+        <label for="file-upload" class="file-upload-label" id="file-upload-label">
+            فایل را اینجا بکش یا کلیک کن
+        </label>
+        <div class="file-name" id="file-name"></div>
+        <input type="submit" value="آپلود و تحلیل" />
+    </form>
+
+    {% if image_path or metadata %}
+    <div class="container">
+        {% if image_path %}
+        <div class="left-panel">
+            <div class="image-preview">
+                <img src="{{ image_path }}" alt="تصویر آپلودشده" />
+            </div>
+            <div class="download-buttons">
+                <a href="{{ url_for('download_file', filetype='txt', filename=txt_filename) }}">دانلود MetaData.txt</a>
+                <a href="{{ url_for('download_file', filetype='csv', filename=txt_filename) }}">دانلود MetaData.csv</a>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if metadata %}
+        <div class="info">
+            <div class="metadata">
+                {{ metadata }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <footer>
+        ساخته شده توسط محمد طاها حاتمی قهساره - 
+        <a href="https://github.com/TahaHatami/" target="_blank" rel="noopener noreferrer">Github</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+form {
+    margin: 2rem 0;
+    background-color: #11111162;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00ff0033;
+    width: 320px;
+    max-width: 90vw;
+}
+
+/* مخفی کردن input فایل اصلی */
+.file-upload-input {
+    display: none;
+}
+
+/* کادر درگ و دراپ */
+.file-upload-label {
+    border: 2px dashed #00ff00;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    color: #00ff00;
+    font-family: 'Fira Code', monospace;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+}
+
+.file-upload-label:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.file-upload-label.dragover {
+    background-color: #00ff0044;
+    border-color: #00cc00;
+    color: #00cc00;
+}
+
+/* نمایش نام فایل انتخاب شده */
+.file-name {
+    padding-top: 50px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #00ff00;
+    font-family: 'Fira Code', monospace;
+    word-break: break-all;
+    min-height: 1.2em;
+}
+
+input[type="submit"] {
+    margin-top: 1.5rem;
+    width: 100%;
+    color: #00ff00;
+    background-color: #000;
+    border: 1px solid #00ff00;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* ===== تغییرات اصلی برای چینش افقی ===== */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    max-width: 900px;
+    margin: 2rem auto 4rem;
+    align-items: flex-start;
+    width: 90vw;
+}
+
+.image-preview {
+    background-color: #111;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #00ff00;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-preview img {
+    max-width: 300px;
+    border-radius: 8px;
+    object-fit: contain;
+    display: block;
+}
+
+/* دکمه‌های دانلود زیر عکس */
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.download-buttons a {
+    color: #00ff00;
+    background-color: #000;
+    border: 1px solid #00ff00;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.download-buttons a:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+/* باکس اطلاعات متادیتا */
+.info {
+    flex: 1;
+    background-color: #111;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 10px #00ff0022;
+    max-height: 500px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.metadata {
+    white-space: pre-wrap;
+    font-family: monospace;
+    color: #00ff00;
+    direction: ltr;
+}
+
+/* فوتر */
+footer {
+    margin-top: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #007700;
+    text-align: center;
+}
+
+/* استایل اسکرول سبز */
+
+/* برای مرورگرهای Webkit مثل کروم، اج، سافاری */
+.info::-webkit-scrollbar {
+    width: 8px;
+}
+
+.info::-webkit-scrollbar-track {
+    background: #111; /* رنگ پس‌زمینه مسیر اسکرول */
+}
+
+.info::-webkit-scrollbar-thumb {
+    background-color: #00ff00; /* رنگ دکمه اسکرول */
+    border-radius: 10px;
+    border: 2px solid #111; /* ایجاد حاشیه برای زیبایی */
+}
+
+/* برای فایرفاکس */
+.info {
+    scrollbar-width: thin;
+    scrollbar-color: #00ff00 #111;
+}
