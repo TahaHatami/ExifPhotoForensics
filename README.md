@@ -30,9 +30,13 @@ ExifPhotoForensics یک ابزار قدرتمند و سبک برای مشاهد�
 - **رابط خط فرمان ساده و سریع**
 
 ---
+ExifTool توسط Phil Harvey توسعه داده شده و در [ExifTool.org](https://exiftool.org/) در دسترس است.
+---
 
 ## 📥 نصب
 
 ```bash
 git clone https://github.com/TahaHatami/ExifPhotoForensics.git
 cd ExifPhotoForensics
+
+
