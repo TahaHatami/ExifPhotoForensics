@@ -30,7 +30,13 @@ ExifPhotoForensics یک ابزار قدرتمند و سبک برای مشاهد�
 - **رابط خط فرمان ساده و سریع**
 
 ---
-ExifTool is developed by Phil Harvey and is available at [ExifTool.org](https://exiftool.org/) 
+## License
+
+This project’s original code is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+Parts of this project include code copied from [ExifTool](https://exiftool.org/), developed by Phil Harvey, which is licensed under the Artistic License 2.0.  
+The full text of the Artistic License is included in the [ARTISTIC-LICENSE](./ARTISTIC-LICENSE) file.
+
 ---
 
 ## 📥 نصب
